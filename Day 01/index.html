@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Comments like this and specify document type -->
+<html>    
+    <head> <!-- This is things 100% loaded/executed before showing anything -->
+        <title>30DyasOfJS: Day 01</title>
+        
+        <!-- External Scripts go either, better on body to load in realtime? -->
+        <script src="external_script.js"></script>
+        <script src="./hello_world.js"></script>
+    </head>
+    <body>
+        <!-- Inline Script -->
+        <button onclick="alert('Welcome to 30DaysofJS')">Click Me!</button>
+        <!-- Internal Script -->
+        <!-- Internal Scripts usually when required on body -->
+        <script>
+            console.log("Welcome to 30DaysOfJS!") // JS has no line ending T_T
+        </script>
+
+        <!-- An expected "main.js" should go Under everything, includes everything above? -->
+    </body>
+</html>
+
+<!-- 
+Data Types:
+    -Number -> Integers and Floats basically
+    -Strings -> Characters between quotes (prefer "" because in C/C++ "string" 'char' `illegal`)
+    -Boolean -> Single Bit true/false
+    -Undefined -> Vars are defined as "let var = ...", if let does not init, it is undefined
+
+Basics:
+    -null -> keyword for empty (C/C++ is Uppercase!)
+    -typeof -> check type of a variable
+    // JS Single Line Comment
+    /_ JS Multiline Comment _/
+
+Variables:
+    Name does not begin with number
+    $ and _ are only special characters allowed for naming
+    variable have camelCase convention
+    No spaces between
+    const = non changing variable
+    let = varying variable
+-->
