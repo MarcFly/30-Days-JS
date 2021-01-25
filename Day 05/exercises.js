@@ -62,10 +62,13 @@ console.log(itCompanies)
 
 // 12
 console.log(`${itCompanies.splice(0,itCompanies.length-2)} and ${itCompanies[itCompanies.length-1]} are big IT companies.`)
+itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+// Splice does break the array, so it gets fuckywucky
+// Try another way
 
-// 13 - TODO
+// 13 
 let test_company = "FACEBOOK"
 let ind = itCompanies.indexOf('IBM')
-console.log(`${(ind > 0)? itCompanies[ind] : 'not found'}`)
+console.log(`${(ind >= 0) ? itCompanies[ind] : 'not found'}`)
 
 // 14
