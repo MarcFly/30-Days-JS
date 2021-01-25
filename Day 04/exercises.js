@@ -113,4 +113,4 @@ if(month == 'FEBRUARY')
 else if(month == 'JANUARY' || month == 'MARCH' || month == 'MAY' || month == 'AUGUST' || month == 'OCTOBER' || month == 'DECEMBER')
     console.log(`${month[0].toUpperCase()+month.substr(1).toLowerCase()} has 31 days`)
 else
-    console.log(`${month[0].toUpperCase()+month.substr(1).toLowerCase()} has 30 days`)Janua
+    console.log(`${month[0].toUpperCase()+month.substr(1).toLowerCase()} has 30 days`)
