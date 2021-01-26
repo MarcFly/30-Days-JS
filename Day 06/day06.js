@@ -13,13 +13,13 @@ for(let i = 0; i < 5; i++)
 let j = 0
 while(j < 5)
 {
-    console.log(i)
+    console.log(j)
     j++
 }
 
 // do while
 do {
-    console.log(i)
+    console.log(j)
     j++
 } while(j <=5)
 
