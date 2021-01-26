@@ -1,27 +1,3 @@
-const countries = [
-    'Albania',
-    'Bolivia',
-    'Canada',
-    'Denmark',
-    'Ethiopia',
-    'Finland',
-    'Germany',
-    'Hungary',
-    'Ireland',
-    'Japan',
-    'Kenya'
-]
-
-const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
-]
-
 // LEVEL 1
 // 1
 let arr = []
@@ -71,4 +47,41 @@ let test_company = "FACEBOOK"
 let ind = itCompanies.indexOf('IBM')
 console.log(`${(ind >= 0) ? itCompanies[ind] : 'not found'}`)
 
-// 14
+// 14 ?? I can't without loops...
+let tests = itCompanies.toString().match(/\w+o+\w+/gi)
+console.log(tests)
+console.log(itCompanies)
+
+// 15
+console.log(itCompanies.sort())
+
+// 16
+console.log(itCompanies.reverse())
+
+// 17
+console.log(itCompanies.slice(0,3))
+
+// 18
+itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+console.log(itCompanies.slice(itCompanies.length-4, itCompanies.length-1))
+
+// 19 
+itCompanies = ['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle', 'Amazon']
+//itCompanies.splice(Math.floor(itCompanies.length/2), itCompanies.length%2)
+console.log(itCompanies.slice(Math.floor(itCompanies.length/2), ((itCompanies.length%2) ? Math.floor(itCompanies.length/2)+1 : Math.floor(itCompanies.length/2)+2)))
+console.log(itCompanies)
+
+// 20
+itCompanies.shift()
+
+// 21
+console.log(itCompanies.splice(Math.floor(itCompanies.length/2), (itCompanies.length%2)?1:2))
+console.log(itCompanies)
+
+// 22
+console.log(itCompanies.pop())
+
+// 23
+itCompanies.splice(0, itCompanies.length)
+// itCompanies.splice('') // itCompanies.splice(/\w+/gi) // ... multiple ways to delete all easily
+console.log(itCompanies)
