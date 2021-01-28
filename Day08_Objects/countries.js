@@ -8,7 +8,7 @@ const countries = [
     currency: 'Afghan afghani'
   },
   {
-    name: 'Åland Islands',
+    name: 'Aland Islands',
     capital: 'Mariehamn',
     languages: ['Swedish'],
     population: 28875,
