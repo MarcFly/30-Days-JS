@@ -38,3 +38,39 @@
 
     // Got the inverse, finds non valids
 }
+
+// LEVEL 2
+// 1
+{
+    function tenMostFreqWords(str)
+    {
+        let words = new Set(str.match(/\w+/g))
+        let ret = new Array() 
+        words.forEach((it, ind) =>
+        {
+            let pattern = new RegExp(`${it}[^a-zA-Z0-9]`,'g') // Search the word but does ntoi have any trailing letter/number
+            ret.push({word: it, count:str.match(pattern).length})
+        })
+        console.log(ret)
+
+        ret.sort((a,b) => b.count - a.count)
+        return ret.slice(0,10)
+    }
+
+    let str = `I love teaching. If you do not love teaching what else can you love. I love Python if you do not love something which can give you all the capabilities to develop an application what else can you love.`
+    console.log(tenMostFreqWords(str))
+
+
+// LEVEL 3
+// 1
+
+    function cleanText(str)
+    {
+        let pattern = new RegExp(`[{}/<>?%$#@;:&]`, 'gi')
+        return str.replace(pattern, '')
+    }
+
+    let sentence = `%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?`
+    console.log(cleanText(sentence))
+    console.log(tenMostFreqWords(cleanText(sentence)))
+}
